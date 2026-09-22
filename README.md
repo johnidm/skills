@@ -2,9 +2,9 @@
 
 # skills
 
-**Personal agent skills for Claude Code, Codex, Cursor, and other [Agent Skills](https://agentskills.io)-compatible agents.**
+**This is my personal [Agent Skills](https://agentskills.io) for AI tools.**
 
-Built and maintained by [Johni Douglas Marangon](https://github.com/johnidm) · Senior engineer · Brazil
+Built and maintained by [Johni Douglas Marangon](https://github.com/johnidm) · Brazil
 
 <br />
 
@@ -14,7 +14,7 @@ Built and maintained by [Johni Douglas Marangon](https://github.com/johnidm) · 
 
 <br />
 
-[Quick Start](#quick-start) · [Skills](#skills) · [How It Works](#how-it-works) · [Create a Skill](#creating-a-skill)
+[Quick Start](#quick-start) · [Skills](#skills) · [Create a Skill](#creating-a-skill)
 
 </div>
 
