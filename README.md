@@ -14,7 +14,7 @@ Built and maintained by [Johni Douglas Marangon](https://github.com/johnidm) · 
 
 <br />
 
-[Quick Start](#quick-start) · [Skills](#skills) · [Create a Skill](#creating-a-skill)
+[Quick Start](#quick-start) · [Skills](#available-skills) · [Create a Skill](#creating-a-skill)
 
 </div>
 
@@ -50,7 +50,7 @@ npx skills add johnidm/skills --list
 npx skills update
 ```
 
-## Skills
+## Available Skills
 
 ### `about-me`
 
@@ -60,6 +60,16 @@ Included as a sample skill to demonstrate how skills in this repo are structured
 
 ```bash
 npx skills add johnidm/skills --skill about-me
+```
+
+### `create-pr`
+
+Creates a GitHub pull request following safe Git practices. Handles branch creation with semantic naming, working-tree inspection, diff validation, pushing, and PR body generation.
+
+**Use when:** the user runs `/create-pr` or asks to open, submit, or publish a pull request.
+
+```bash
+npx skills add johnidm/skills --skill create-pr
 ```
 
 ## Repository Structure
