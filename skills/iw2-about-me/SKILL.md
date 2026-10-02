@@ -1,5 +1,5 @@
 ---
-name: about-me
+name: iw2-about-me
 description: >-
   Provides personal context about Johni Douglas Marangon (johnidm) by fetching
   live GitHub profile data. Use when the user asks about me, my background,

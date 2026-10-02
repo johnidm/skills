@@ -1,9 +1,9 @@
 ---
-name: create-pr
+name: iw2-create-pr
 description: >-
   Creates a GitHub pull request following safe Git practices. Handles branch
   creation with semantic naming, working-tree inspection, diff validation,
-  pushing, and PR body generation. Use when the user runs /create-pr or asks
+  pushing, and PR body generation. Use when the user runs /create-pr, /iw2-create-pr, or asks
   to open, submit, or publish a pull request.
 ---
 
@@ -14,6 +14,8 @@ Automates the full pull request workflow — from branch naming to PR body gener
 ## Usage
 
 ```text
+/iw2-create-pr [base branch] [optional additional information]
+# or
 /create-pr [base branch] [optional additional information]
 ```
 
@@ -25,7 +27,7 @@ Automates the full pull request workflow — from branch naming to PR body gener
 Before starting, run the integration detection script:
 
 ```bash
-bash skills/create-pr/scripts/detect-github-integration.sh
+bash skills/iw2-create-pr/scripts/detect-github-integration.sh
 ```
 
 This reports whether **GitHub CLI (`gh`)** or **GitHub MCP** is available.
@@ -43,7 +45,7 @@ This reports whether **GitHub CLI (`gh`)** or **GitHub MCP** is available.
 - If no base branch is provided, run the suggestion script:
 
   ```bash
-  bash skills/create-pr/scripts/suggest-base-branch.sh
+  bash skills/iw2-create-pr/scripts/suggest-base-branch.sh
   ```
 
 - Verify that the selected base branch exists on the remote before continuing.
@@ -90,6 +92,7 @@ This reports whether **GitHub CLI (`gh`)** or **GitHub MCP** is available.
 - Inspect current Git status before making any changes.
 - Review existing changes to understand what belongs to the current task.
 - If task-related changes are uncommitted, commit them with a meaningful semantic commit message.
+- Follow the `iw2-commit` skill conventions when committing (logical grouping, Conventional Commits).
 - **Do not** commit unrelated changes. Preserve them as unstaged or stashed.
 
 ---
