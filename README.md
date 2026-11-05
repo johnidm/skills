@@ -122,6 +122,16 @@ Explains how a repository or feature works by tracing a real request, command, o
 npx skills add johnidm/skills --skill iw2-tour-code
 ```
 
+### `iw2-update-deps`
+
+Updates project dependencies safely, then proves the project still works with its own tooling. Detects the package manager, inspects available updates by risk, upgrades while weighing compatibility and breaking changes, runs tests/lint/type check/format check and any other configured validators, fixes what the upgrade broke, and ends with a summary of versions, notable changes, new capabilities, breaking changes, check results, and follow-ups. Does not commit or push.
+
+**Use when:** the user runs `/update-deps`, `/iw2-update-deps`, or asks to update, upgrade, or bump dependencies, packages, or libraries.
+
+```bash
+npx skills add johnidm/skills --skill iw2-update-deps
+```
+
 ## Repository Structure
 
 ```
